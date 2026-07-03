@@ -1,2 +1,66 @@
 # **Swerve Drive**
 3D printed swerve drive! 
+
+## Build
+<img width="713" height="494" alt="image" src="https://github.com/user-attachments/assets/835d5477-3cfa-43c1-b009-cf7b16bdfe60" />
+
+CAD Link: https://cad.onshape.com/documents/d429383bcee8295a505cbf1f/w/4cb76ce82d333762f6fc2bfa/e/bd259976b7240cf77be97213?renderMode=0&uiState=6a483284ef38c7be8f930ffd
+
+It should be relatively easy to design your own frame rails to change the overall length/width of the drive base if you choose.
+
+### **Printing**
+The only thing that actually needs supports is the drive fork that has the bevel gear slot, since most printers should be able to do the other overhangs. Printed on my A1M just fine with standard settings.
+
+Note: I did not print out the bellypan, I cut it out by hand from some high density cardboard I had lying around. I reccomend this as well since its easier to make holes to mount things and this part is pretty big.
+
+### **Assembly**
+Everything goes together exactly how it is in the CAD. Make sure to hot glue in the magnets into the encoder shaft.
+As previously mentioned, I just placed my electronics and drilled mounting holes for them into the bellypan.
+
+To increase traction on the wheels I just put some electrical tape around them.
+
+<img width="4000" height="3000" alt="20260619_204038" src="https://github.com/user-attachments/assets/7fd05a8a-3d9e-4832-8f21-b375d1e3964c" />
+
+
+## **Wiring**
+<img width="1536" height="960" alt="drive motor wiring" src="https://github.com/user-attachments/assets/b3e07417-5668-42a5-b8eb-805b4a8da819" />
+<img width="1536" height="960" alt="swerverivewiringiagram" src="https://github.com/user-attachments/assets/3a468f0f-2794-4419-9c5b-d880c90cd570" />
+
+IMPORTANT: Adafruit motor shield by default uses 5 volt logic, but nucelos use 3.3 volt outputs so you must cut the trace and bridge the 3.3 volt logic pad as seen in the wiring diagram
+Also important: The only thing that runs on 5 volts is the flysky reciever, everything else uses 3.3 volts (aside from the motors obviously which use 12 volts)
+
+For the 12 volt power distribution, I just used some wagos to split up the power to all the drive motors and the adafruit motor shield in parallel.
+
+After soldering the wires to the N20 motors, they have a tendency to break off, so I hot glued the connection. I also hot glued the encoder cables because dupont connectors aren't that great and even a slightly loose connection can throw the encoder readings off.
+
+### **Written List of Pins:**
+FR Module: 
+  EN- PA12
+  IN1- PA11
+  IN2- PA9
+  IN3- PA10
+  Encoder Out- PC1
+
+FL Module: 
+  EN- PB5
+  IN1- PB6
+  IN2- PB8
+  IN3- PB9
+  Encoder Out- PA4
+
+BR Module: 
+  EN- PC5
+  IN1- PC6
+  IN2- PC7
+  IN3- PC8
+  Encoder Out- PC2
+
+BL Module: 
+  EN- PC4
+  IN1- PA0
+  IN2- PA1
+  IN3- PA15
+  Encoder Out- PC0
+
+## **Code**
+Uploading is pretty straightforward, make sure you have the official STM32Cores and have set up the Arduino IDE for STM32 upload.
