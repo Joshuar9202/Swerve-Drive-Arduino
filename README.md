@@ -1,5 +1,6 @@
 # **Swerve Drive**
-3D printed swerve drive! 
+3D printed coaxial swerve drive! 
+<img width="4000" height="3000" alt="thumbnail red bg" src="https://github.com/user-attachments/assets/423156e4-7c1d-4fa4-af0f-83c531c2e14a" />
 
 ## Build
 <img width="713" height="494" alt="image" src="https://github.com/user-attachments/assets/835d5477-3cfa-43c1-b009-cf7b16bdfe60" />
