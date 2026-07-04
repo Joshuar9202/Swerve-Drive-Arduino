@@ -7,6 +7,8 @@ https://www.youtube.com/watch?v=bPC4PA_9ZH0
 ## Build
 <img width="713" height="494" alt="image" src="https://github.com/user-attachments/assets/835d5477-3cfa-43c1-b009-cf7b16bdfe60" />
 
+Bill of Materials: https://docs.google.com/spreadsheets/d/1JbDlUu6udkqM81WZ7hx05DRgLwFBebW2xzIRILkRvEQ/edit?gid=0#gid=0
+
 CAD Link: https://cad.onshape.com/documents/d429383bcee8295a505cbf1f/w/4cb76ce82d333762f6fc2bfa/e/bd259976b7240cf77be97213?renderMode=0&uiState=6a483284ef38c7be8f930ffd
 
 It should be relatively easy to design your own frame rails to change the overall length/width of the drive base if you choose.
