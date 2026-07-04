@@ -34,33 +34,61 @@ For the 12 volt power distribution, I just used some wagos to split up the power
 After soldering the wires to the N20 motors, they have a tendency to break off, so I hot glued the connection. I also hot glued the encoder cables because dupont connectors aren't that great and even a slightly loose connection can throw the encoder readings off.
 
 ### **Written List of Pins:**
-FR Module: 
+**Note:** Pins can change as wished by the user, but every input pin for an individual simpleFOC module (IN1, IN2, IN3) must be on the on the same hardware timer on the nucleo
+#### FR Module: 
   EN- PA12
+  
   IN1- PA11
+  
   IN2- PA9
+  
   IN3- PA10
+  
   Encoder Out- PC1
 
-FL Module: 
+
+#### FL Module: 
   EN- PB5
+  
   IN1- PB6
+  
   IN2- PB8
+  
   IN3- PB9
+  
   Encoder Out- PA4
 
-BR Module: 
+
+#### BR Module: 
   EN- PC5
+  
   IN1- PC6
+  
   IN2- PC7
+  
   IN3- PC8
+  
   Encoder Out- PC2
 
-BL Module: 
+
+#### BL Module: 
   EN- PC4
+  
   IN1- PA0
+  
   IN2- PA1
+  
   IN3- PA15
+  
   Encoder Out- PC0
+
 
 ## **Code**
 Uploading is pretty straightforward, make sure you have the official STM32Cores and have set up the Arduino IDE for STM32 upload.
+
+### **Libraries to Download**
+- SimpleFOC (**Important: At the time of writing this, only the 2.3.5 version of the library works, the latest version, 2.4.0, does not work**)
+- PID by Brett Beauregard
+- Adafruit Motor Shield V2 Library
+- MPU6050_Light by rfetick
+- IBusBM by Bart Mellink
