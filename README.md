@@ -1,5 +1,7 @@
 # **Swerve Drive**
 3D printed coaxial swerve drive! 
+
+https://www.youtube.com/watch?v=bPC4PA_9ZH0
 <img width="4000" height="3000" alt="thumbnail red bg" src="https://github.com/user-attachments/assets/423156e4-7c1d-4fa4-af0f-83c531c2e14a" />
 
 ## Build
