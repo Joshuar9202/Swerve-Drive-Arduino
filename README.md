@@ -1,7 +1,7 @@
 # **Swerve Drive**
 3D printed coaxial swerve drive! 
 
-https://www.youtube.com/watch?v=bPC4PA_9ZH0
+Demo Video: https://www.youtube.com/watch?v=bPC4PA_9ZH0
 <img width="4000" height="3000" alt="thumbnail red bg" src="https://github.com/user-attachments/assets/423156e4-7c1d-4fa4-af0f-83c531c2e14a" />
 
 ## Build
@@ -21,6 +21,11 @@ Note: I did not print out the bellypan, I cut it out by hand from some high dens
 ### **Assembly**
 Everything goes together exactly how it is in the CAD. Make sure to hot glue in the magnets into the encoder shaft.
 As previously mentioned, I just placed my electronics and drilled mounting holes for them into the bellypan.
+
+To secure the encoder column and thhe magnet, use hot glue. It is critical for the magnet to be secured properly for the encoder to track position correctly!
+
+<img width="687" height="583" alt="image" src="https://github.com/user-attachments/assets/1edf287b-3155-4649-ad7e-a5341ab9d726" />
+
 
 To increase traction on the wheels I just put some electrical tape around them.
 
