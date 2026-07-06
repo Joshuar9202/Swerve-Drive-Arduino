@@ -102,3 +102,11 @@ Uploading is pretty straightforward, make sure you have the official STM32Cores 
 - Adafruit Motor Shield V2 Library
 - MPU6050_Light by rfetick
 - IBusBM by Bart Mellink
+
+## Credits:
+### Swerve Kinematics:
+https://www.chiefdelphi.com/t/paper-4-wheel-independent-drive-independent-steering-swerve/107383
+https://www.chiefdelphi.com/uploads/default/original/3X/8/c/8c0451987d09519712780ce18ce6755c21a0acc0.pdf
+
+### AI Usage Declaration:
+Gemini was used only for generating pinouts for the simpleFOCs and for minor debugging. All code was written by hand with inspiration from the aforementioned sources.
